@@ -1,0 +1,131 @@
+---
+title: "Final Project Slides"
+author: "Jimmy Chan, Cho Fung Chan, Justin Lau"
+date: "December 1, 2016"
+output: ioslides_presentation
+---
+
+##Introduction
+
+The NBA is the top basketball league around the world. 
+
+The History of salary cap:
+In order to avoid the rich teams with high monopoly star players, NBA provides each team's salary cap. Therefore, teams have to make important decision on their players.
+
+##Purpose:
+
+To analyze whether the NBA players are reasonable paid in terms of their contribution on their teams. 
+
+##Overview:
+
+Section II we will analyze the collective data of the NBA player from their salaries, contribution on-court, and statistics. 
+
+Section III we will explore the methodology, which included Data Acquisition, Data Cleaning, EFF, Shiny app, etc. More importantly, we will describe our data and variable we used in our table. 
+
+Section IV we will explain results from the collective statistics, and will provide the result of our analysis and the explanation for our results. 
+
+Section V we will discuss the conclusion, along with our studies and researches.
+
+##Section II: Data
+
+
+There are 30 different teams throughout the NBA league over the course of NBA season 2015-2016. 
+
+##Source: 
+The primary data sets for our project are mainly from "Basketball Reference". It provides informative statistics and those data includes each player's on-court contribution.
+
+Our first data set contains 471 NBA players and their statistics about efficiency, scores, assists, steals, blocks, offensive, defensive and total rebounds, missed field goal, missed field throw, turnover and game played in the season.
+
+Basketball Reference.com is a reliable and informative resource that enables us to collect most of the important statistics for each player.
+
+##Methodology
+
+Our methodology starts with operational function and data evaluation:
+
+To identify the performance of players by collecting analysis data for all components involved.
+Original EFF formula: EFF = (PTS + REB + AST + STL + BLK - Missed FG - Missed FT - TO) / GP.
+The drawback of original EFF:
+The EFF does not take into consideration of the different position of the players.
+To avoid the drawback of EFF, we use the Principle Components Analysis which enable us to weight for position. 
+The EFF formula is: EFF *= w1(x1)/sd1 + ..+ w8 (x8)/sd8. 
+Method of illustration:
+We used the shiny app ("stat salaries"), which enable us to examine the relationship between the on-court contribution (statistics included EFF) and salaries, the app allows to change the x-y variable. 
+
+##Value of players
+
+We also calculated the value of each NBA player as we use the formula (value = efficiency / salary). This allows us to compute the efficiency over their salaries proportion. 
+
+By inspecting players with the top 20 and bottom 20 values, we arrived the conclusion that players with high EFF don't necessarily have high value. 
+
+##Results
+
+![average salary](http://imgur.com/0m3t9J1.png)
+
+----
+
+This table shows that average salary for each team. We concluded that the Cleveland has the highest average salary. Conversely, the Philadelphia has the lowest average salary. This indicates Cleveland has more capital to pay for the roster, which allow them to enhance their competiveness. As a result, Cleveland was the Champion in NBA season 2015-2016. This can be illustrated that the more capital a team possess, the higher possibility for them to hire greater player as they have higher chance to win the games.
+
+----
+
+![median salary](http://imgur.com/iPrbBsb.png)
+
+This table shows that median salary for each team. We can see that the Cleveland also has the highest median salary. The ranking is fairly similar to the table of average salary for teams.
+
+----
+
+![maximum payroll](http://imgur.com/bte22wH.png)
+
+This chart shows that the maximum payroll for each team. It can be seen that Lakers has the highest single player payroll. 
+
+----
+
+But ironically, Lakers maintain a relatively low percentage of winning throughout NBA 2015-2016. The amount Lakers invested in that particular player is not worth.
+
+----
+
+![total payroll](http://imgur.com/7G0V0Yz.png)
+
+The last table displays that the total amount of salary for each team. This can be seen that Cleveland has the highest total payroll among all teams. On the other hand, Portland has the lowest total payroll.
+
+----
+The ranking is relatively similar to the table of maximum payroll for each team. Since Portland has less capital, so they are incapable of affording superstars.
+
+The scatter plot on the following page displays a positive correlation between the salaries of a player and the point he made per game. We applied the efficiency and salary. 
+
+----
+
+![relation between salary and points](http://imgur.com/13bbRkQ.png)
+
+From what we have observed above, there is positive correlation between the salary and the point made by a player. The correlation is 0.6400332. We concluded that a player's revenue proportionally determined how many points he made per game.
+
+----
+
+![relation between salary and EFF](http://imgur.com/wm0Y8VB.png)
+ 
+Our second model shows that there is positive correlation between the salary and the EFF for players. The correlation is 0.703521. We also concluded that a player's revenue proportionately determined by his efficiency statistics per game.
+
+
+----
+
+![relation between salary and steals](http://imgur.com/1NbrsZZ.png)
+ 
+This table reveals the relationship between the salary of a player and the total of stealing of player. In this table, the correlation is 0.4857321. Interestingly, the graph shows that a large amount of players received low salaries and it matched with their stealing skills.
+However, when we rank players according to their value, we see that the players who scored high in EFF are unseen at the top of the value chart. This simply illustrates that for the amount these star players are paid, they are underperforming.
+
+##Conclusion
+
+Our project provides us an insight of the correlation coefficient between the on-court contribution of each player and their salaries. The statistics revealed in our studies showed NBA players are generally overpaid when we are comparing their on-court contribution (EFF) and their revenues.
+The other interesting factor from our models illustrates that there is a strong correlation coefficient between the point scored and the salary.
+
+----
+
+As a result, we can say that a player's revenue is greatly determined by his scoring power. 
+However, from our data set, it shows that point guard has a stronger ability of stealing. These skills play an important role in determining the payroll of players. 
+
+----
+
+We found that a certain amount of the players are over paid. So players' practical ability has not always matched their salaries. 
+Our studies enable us to evaluate the on court contribution of a player, and to improve our knowledge about the factors that contribute to the salaries of a player.
+
+#END
+For more information, please read the report, the attached images and shiny app
