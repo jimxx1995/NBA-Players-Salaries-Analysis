@@ -69,20 +69,22 @@ We wrote a data cleaning function in R to produce the`roster-salary-stats.csv` t
 `Roster`, `Totals`, and `Salary` and removes the useless contents. Then, we stored the 
 `roster-salary-stats.csv` in `cleandata` folder.
 
-##Analysis
+## Analysis
 
-####Exploratory Data Analysis
+#### Exploratory Data Analysis
 
 We wrote an exploratory data analysis function `eda` to calculate descriptive summaries for quantitative
 variables. We stored those results to a text file `eda-output.txt` in the fodler `cleandata`, and used a shiny
 app that displays a horizontal bar-chart.
 
-####Performance of players
+#### Performance of players
 We used the Principal Components Analysis (PCA) to compute a weight for each term in the original EFF formula and
 created a new table `eff-salary-stats.csv` in the directory `cleandata`. We used shiny app to visualize the 
 relationship between all the player statistics and display a scatterplot in which the x-axis corresponds to one 
 statistic, and the y-axis corresponds to salary.
 
+# Shiny App
+https://statdataviz.shinyapps.io/team-salaries/
 
 ## Authors
 
