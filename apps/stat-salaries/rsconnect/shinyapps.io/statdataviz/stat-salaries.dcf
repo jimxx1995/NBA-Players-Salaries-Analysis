@@ -1,0 +1,10 @@
+name: stat-salaries
+title:
+username:
+account: statdataviz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 390929
+bundleId: 1505741
+url: https://statdataviz.shinyapps.io/stat-salaries/
+when: 1532858476.43397

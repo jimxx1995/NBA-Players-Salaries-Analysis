@@ -1,0 +1,10 @@
+name: team-salaries
+title:
+username:
+account: statdataviz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 390913
+bundleId: 1505682
+url: https://statdataviz.shinyapps.io/team-salaries/
+when: 1532853125.41066

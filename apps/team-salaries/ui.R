@@ -1,3 +1,5 @@
+options(encoding ='UTF-8')
+
 shinyUI(fluidPage(
   titlePanel(title="Team Statistics"),
   sidebarLayout(

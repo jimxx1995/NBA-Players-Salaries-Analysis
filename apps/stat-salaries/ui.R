@@ -15,7 +15,9 @@ shinyUI(fluidPage(
     mainPanel(
       plotOutput("Plot"),
       textOutput("Text"),
-      textOutput("Correlation")
+      textOutput("Text2"),
+      textOutput("Text3"),
+      textOutput("Text4")
     )
   )
 )
