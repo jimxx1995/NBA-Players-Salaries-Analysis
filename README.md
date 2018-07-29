@@ -85,6 +85,7 @@ statistic, and the y-axis corresponds to salary.
 
 # Shiny App
 https://statdataviz.shinyapps.io/team-salaries/
+
 https://statdataviz.shinyapps.io/stat-salaries/
 
 ## Authors
