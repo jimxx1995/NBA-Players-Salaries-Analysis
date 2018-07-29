@@ -1,6 +1,6 @@
-# Stat 133 Final Project
+# NBA Players Salaries Analysis
 
-The final project analyzes the data about basketball players from the National Basketball
+This project analyzes the data about basketball players from the National Basketball
 Association (NBA) League in the 2015-2016 season.The central topic is analyzing the salary 
 and performance of NBA players.The motivating question is: ¡§In the 2015-2016 season, how 
 do the skills of a player relate to his salary?¡¨ In this project, we use all the concepts,
